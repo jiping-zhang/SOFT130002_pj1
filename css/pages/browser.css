@@ -12,7 +12,76 @@
 /*#content #pageBox{*/
 /*    float: right;*/
 /*}*/
+#leftNavBox {
+    position: absolute;
+    left: 10px;
+    top:60px;
+    width: 200px;
+    float: left;
+    margin-right: 40px;
+}
+
+#leftNavBox * {
+    padding: 0 0;
+    margin: 0 0 0 0;
+}
+
+#leftNavBox h2 {
+    width: 100%;
+    position: relative;
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #696969;
+    transition: .8s;
+}
+
+#leftNavBox .singleMenu:hover h2 {
+    background-color: #999999;
+    color: white;
+}
+
+#leftNavBox .singleMenu .singleCont {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 0;
+    transition: .8s;
+}
+
+#leftNavBox .singleMenu:hover .singleCont {
+    height: auto;
+}
+
+#leftNavBox .singleItem {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    color: #c24c4c;
+    transition: .8s;
+    min-width: 100px;
+}
+
+#leftNavBox .singleItem:hover {
+    background-color: #f0a1be;
+    color: white;
+}
+
+#leftNavBox .singleItem input {
+    width: 80%;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
 #content{
+    position: absolute;
+    top:60px;
+    left: 240px;
     border:2px #696969 solid;
     overflow: hidden;
 }
