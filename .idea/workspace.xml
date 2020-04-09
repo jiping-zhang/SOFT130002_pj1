@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98a85eb8-da17-4129-9afa-72ad7dfe87c2" name="Default Changelist" comment="" />
+    <list default="true" id="98a85eb8-da17-4129-9afa-72ad7dfe87c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/pages/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/detail.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yc2uZfNuEokoyWWKjNjBfZVLzx" />
   <component name="ProjectViewState">
@@ -67,8 +72,8 @@
       <item itemvalue="JavaScript Debug.signUp.html" />
       <item itemvalue="JavaScript Debug.browserPage.html" />
       <item itemvalue="JavaScript Debug.upload.html" />
-      <item itemvalue="Node.js.uploadImg.js" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.uploadImg.js" />
     </list>
     <recent_temporary>
       <list>
@@ -140,6 +145,7 @@
       <workItem from="1586345693225" duration="548000" />
       <workItem from="1586347039558" duration="2298000" />
       <workItem from="1586415831363" duration="4442000" />
+      <workItem from="1586421317361" duration="27000" />
     </task>
     <servers />
   </component>
@@ -199,10 +205,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="254" y="36" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583568126133" />
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1586415856847">
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1586421321320">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586415856847" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586421321320" />
     <state x="614" y="118" width="756" height="611" key="dock-window-1" timestamp="1584007249809">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
