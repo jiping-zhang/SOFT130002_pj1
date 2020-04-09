@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <!--    <link href="../../css/pages/cutImage.css" rel="stylesheet" type="text/css">-->
+    <link href="../../css/pages/upload.css" rel="stylesheet" type="text/css">
+    <link href="../../css/cutImage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../js/cityCorrelateCountry.js" defer></script>
+    <script type="text/javascript" src="../../js/stretchImage.js" defer></script>
+    <script type="text/javascript" src="../../js/uploadImg.js" defer></script>
+    <title>上传</title>
+</head>
+<body>
+<div id="navBox">
+    <div class="singleMenu" id="navRight">
+        <span>个人中心</span>
+        <div class="singleCont">
+            <a href="upload.html"><span class="singleItem" id="selected"><img src="../../src/img/navBox/upload.jpg">上传</span></a>
+            <br>
+            <a href="myPhotos.html"><span class="singleItem"><img src="../../src/img/navBox/myPhotos.jpg">我的照片</span></a>
+            <br>
+            <a href="myFavourite.html"><span class="singleItem"><img src="../../src/img/navBox/myFavourite.jpg">我的收藏</span></a>
+            <br>
+            <a href="login.html"><span class="singleItem"><img src="../../src/img/navBox/login.jpg">登陆</span></a>
+        </div>
+    </div>
+    <a href="../../index.html"><span class="singleItem">首页</span></a>
+    <a href="../navItems/browserPage.html"><span class="singleItem">浏览页</span></a>
+    <a href="../navItems/searchPage.html"><span class="singleItem">搜索页</span></a>
+</div>
+<div id="content">
+    <form name="uploadForm" id="contentForm" action="myPhotos.html" method="get">
+        <div class="contRow title">
+            上传
+        </div>
+        <div class="contRow">
+            <div class="imgContainer" id="imgContainer0">
+                <img src="" class="contImg" id="img0">
+            </div>
+            <input type="file" name="file0" id="file0" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg"/><br>
+        </div>
+        <div class="contRow">
+            <select name="content">
+                <option disabled value="0">-- content --</option>
+                <option value="scenery">scenery</option>
+                <option value="city">city</option>
+                <option value="people">people</option>
+                <option value="animal">animal</option>
+                <option value="building">building</option>
+                <option value="wonder">wonder</option>
+            </select>
+            <select name="country" id="country" onChange="setCity(this, this.form.city);">
+                <option disabled value="0">-- country --</option>
+                <option value="China">China</option>
+                <option value="America">America</option>
+                <option value="Japan">Japan</option>
+                <option value="Italy">Italy</option>
+            </select>
+            <select name="city" id="city" style="min-width: 160px">
+                <option disabled value="0">-- city --</option>
+            </select>
+        </div>
+        <div class="contRow">
+            <p>title</p>
+            <br>
+            <input type="text" name="title" id="uploadTitle">
+            <br>
+            <p>content</p>
+            <br>
+            <textarea name="content" id="uploadCont"></textarea>
+        </div>
+        <div class="contRow_bottom" id="pageBox">
+            <input type="submit" class="submit" value="upload">
+        </div>
+    </form>
+</div>
+<div id="foot">
+    <p>Copy right 19302010022@fudan.edu.cn <img src="../../src/img/2dCode.jpg"></p>
+</div>
+</body>
+</html>

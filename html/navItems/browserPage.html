@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../css/pages/browser.css" rel="stylesheet" type="text/css">
+    <link href="../../css/cutImage.css" rel="stylesheet" type="text/css">
+    <link href="../../css/returnTopBt.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../js/cityCorrelateCountry.js"></script>
+    <script type="text/javascript" src="../../js/cutImage.js"></script>
+    <title>浏览</title>
+</head>
+<body>
+<div id="container">
+<div id="navBox">
+    <div class="singleMenu" id="navRight">
+        <span>个人中心</span>
+        <div class="singleCont">
+            <a href="../personalCenter/upload.html"><span class="singleItem"><img src="../../src/img/navBox/upload.jpg">上传</span></a>
+            <br>
+            <a href="../personalCenter/myPhotos.html"><span class="singleItem"><img src="../../src/img/navBox/myPhotos.jpg">我的照片</span></a>
+            <br>
+            <a href="../personalCenter/myFavourite.html"><span class="singleItem"><img src="../../src/img/navBox/myFavourite.jpg">我的收藏</span></a>
+            <br>
+            <a href="../personalCenter/login.html"><span class="singleItem"><img src="../../src/img/navBox/login.jpg">登陆</span></a>
+        </div>
+    </div>
+    <a href="../../index.html"><span class="singleItem">首页</span></a>
+    <a href="browserPage.html"><span class="singleItem" id="selected">浏览页</span></a>
+    <a href="searchPage.html"><span class="singleItem">搜索页</span></a>
+</div>
+<div id="leftNavBox">
+    <!--    <div class="singleMenu"><a href="https://www.zhihu.com/creator/featured-question/knowledge-plan"><h2>搜索</h2></a></div>-->
+    <div class="singleMenu">
+        <a><h2>search</h2></a>
+        <div class="singleCont">
+            <form>
+                <span class="singleItem"><input type="text" name="keyWord"></span>
+                <br>
+                <span class="singleItem"><input type="submit" name="submit" value="搜索"></span>
+            </form>
+        </div>
+    </div>
+    <div class="singleMenu">
+        <a><h2>hot content</h2></a>
+        <div class="singleCont">
+            <a><span class="singleItem" onclick="document.getElementById('contentSelect').value='scenery';document.getElementById('contentForm').submit();"> scenery </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('contentSelect').value='city';document.getElementById('contentForm').submit();"> city </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('contentSelect').value='people';document.getElementById('contentForm').submit();"> people </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('contentSelect').value='animal';document.getElementById('contentForm').submit();"> animal </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('contentSelect').value='building';document.getElementById('contentForm').submit();"> building </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('contentSelect').value='wonder';document.getElementById('contentForm').submit();"> wonder </span></a>
+        </div>
+    </div>
+    <div class="singleMenu">
+        <a><h2>hot cities</h2></a>
+        <div class="singleCont">
+            <a><span class="singleItem" onclick="document.getElementById('country').value='China';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='Shanghai';document.getElementById('contentForm').submit();"> Shanghai </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('country').value='America';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='New York';document.getElementById('contentForm').submit();"> New York </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('country').value='Japan';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='Tokyo';document.getElementById('contentForm').submit();"> Tokyo </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('country').value='China';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='Beijing';document.getElementById('contentForm').submit();"> Beijing </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('country').value='Italy';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='Roma';document.getElementById('contentForm').submit();"> Roma </span></a>
+            <br>
+            <a><span class="singleItem" onclick="document.getElementById('country').value='America';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='San Francisco';document.getElementById('contentForm').submit();"> San Francisco </span></a>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="contRow title">
+        筛选
+    </div>
+    <div class="contRow">
+        <div>
+            <form name="contentForm" id="contentForm" action="" method="get">
+                <select name="content" id="contentSelect">
+                    <option value="0">-- content --</option>
+                    <option value="scenery">scenery</option>
+                    <option value="city">city</option>
+                    <option value="people">people</option>
+                    <option value="animal">animal</option>
+                    <option value="building">building</option>
+                    <option value="wonder">wonder</option>
+                </select>
+                <select name="country" id="country" onChange="setCity(this, this.form.city);">
+                    <option value="0">-- country --</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Italy">Italy</option>
+                </select>
+                <select name="city" id="city" style="min-width: 160px">
+                    <option value="0">-- city --</option>
+                </select>
+                <input type="submit" class="submit" value="filter">
+            </form>
+        </div>
+    </div>
+    <div class="contRow">
+        <div class="imgContainer"><a href="detail.html">
+            <img class="contImg" src="../../src/img/1.jpg">
+        </a></div>
+        <div class="imgContainer"><a href="detail.html">
+            <img class="contImg" src="../../src/img/2.jpg">
+        </a></div>
+        <div class="imgContainer"><a href="detail.html">
+            <img class="contImg" src="../../src/img/3.jpg">
+        </a></div>
+        <div class="imgContainer"><a href="detail.html">
+            <img class="contImg" src="../../src/img/4.jpg">
+        </a></div>
+        <div class="imgContainer"><a href="detail.html">
+            <img class="contImg" src="../../src/img/5.jpg">
+        </a></div>
+        <div class="imgContainer"><a href="detail.html">
+            <img class="contImg" src="../../src/img/6.jpg">
+        </a></div>
+    </div>
+    <div class="contRow_bottom" id="pageBox">
+        <ul>
+            <li><a href="#"><span class="singleItem">首页</span></a></li>
+            <li><a href="#"><span class="singleItem">上一页</span></a></li>
+            <li><a href="#"><span class="singleItem">1</span></a></li>
+            <li><a href="#"><span class="singleItem">2</span></a></li>
+            <li><a href="#"><span class="singleItem">3</span></a></li>
+            <li><a href="#"><span class="singleItem">4</span></a></li>
+            <li><a href="#"><span class="singleItem">5</span></a></li>
+            <li><a href="#"><span class="singleItem">下一页</span></a></li>
+            <li><a href="#"><span class="singleItem">末页</span></a></li>
+        </ul>
+    </div>
+</div>
+<a href="#">
+    <div id="returnTop">
+        <span>↑</span>
+    </div>
+</a>
+    <div id="refresh" onclick="alert('功能缺陷')" style="cursor: pointer">
+        <span>R</span>
+    </div>
+    <div id="foot">
+        <p>Copy right 19302010022@fudan.edu.cn <img src="../../src/img/2dCode.jpg"></p>
+    </div>
+</div>
+</body>
+</html>
