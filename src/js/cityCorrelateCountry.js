@@ -1,22 +1,22 @@
 // used in navItems/browserPage.html
 
-var setCity=(function ()
+var setCity = (function ()
 	{
 		cities = new Object();
-		cities['China']=['Shanghai','Kunming','Beijing','Yantai'];
-		cities['America']=['New York','San Francisco', 'Washington'];
-		cities['Japan']=['Tokyo', 'Osaka', 'Kamakura'];
-		cities['Italy']=['Roma','Milan','Venice','Florence'];
+		cities['China'] = ['Shanghai', 'Kunming', 'Beijing', 'Yantai'];
+		cities['America'] = ['New York', 'San Francisco', 'Washington'];
+		cities['Japan'] = ['Tokyo', 'Osaka', 'Kamakura'];
+		cities['Italy'] = ['Roma', 'Milan', 'Venice', 'Florence'];
 		return function (countryForm, cityForm)
 		{
-			var countryValue=countryForm.value;
+			var countryValue = countryForm.value;
 			var i, j;
-			cityForm.length=1;
-			if(countryValue=='0') return;
-			if(typeof(cities[countryValue])=='undefined') return;
-			for(i=0; i<cities[countryValue].length; i++)
+			cityForm.length = 1;
+			if (countryValue == '0') return;
+			if (typeof (cities[countryValue]) == 'undefined') return;
+			for (i = 0; i < cities[countryValue].length; i++)
 			{
-				j = i+1;
+				j = i + 1;
 				cityForm.options[j] = new Option();
 				cityForm.options[j].text = cities[countryValue][i];
 				cityForm.options[j].value = cities[countryValue][i];
@@ -52,4 +52,4 @@ var setCity=(function ()
 	}
 )();*/
 
-setCity(document.getElementById("country"),document.getElementById("city"));
+setCity(document.getElementById("country"), document.getElementById("city"));

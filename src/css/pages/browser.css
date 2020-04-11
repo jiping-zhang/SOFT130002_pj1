@@ -42,7 +42,7 @@
 }
 
 #leftNavBox .singleMenu .singleCont {
-    height: 0;
+    height: auto;
     width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0);
@@ -50,9 +50,9 @@
     transition: .8s;
 }
 
-#leftNavBox .singleMenu:hover .singleCont {
+/*#leftNavBox .singleMenu:hover .singleCont {
     height: auto;
-}
+}*/
 
 #leftNavBox .singleItem {
     width: 100%;
@@ -63,6 +63,7 @@
     color: #c24c4c;
     transition: .8s;
     min-width: 100px;
+    cursor: pointer;
 }
 
 #leftNavBox .singleItem:hover {

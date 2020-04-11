@@ -12,19 +12,6 @@ var changeTableWidth=(function ()
 	}
 })();
 
-/*
-window.onload = function ()
-{
-	cutImage();
-	changeTableWidth();
-};
-
-window.onresize=function ()
-{
-	cutImage();
-	changeTableWidth();
-};*/
-
 window.addEventListener("load",changeTableWidth);
 
 window.addEventListener("resize",changeTableWidth);

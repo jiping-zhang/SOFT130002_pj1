@@ -1,4 +1,4 @@
-var isLogin=false;
+const isLogin=[false];
 
 /*
 var login=(function ()

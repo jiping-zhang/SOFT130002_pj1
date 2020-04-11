@@ -1,27 +1,14 @@
-/*document.getElementById("file0").onchange=function ()
-{
-	var objUrl = getObjectURL(document.getElementById("file0").files[0]) ;
-	console.log("objUrl = "+objUrl);
-	if (objUrl!="")
-		document.getElementById("img0").setAttribute("src",objUrl);
-	cutImage();
-};*/
-
-/*document.getElementById("file0").onchange=function ()
-{
-	let objUrl = getObjectURL(document.getElementById("file0").files[0]);
-	if (objUrl!="")
-	{
-		document.getElementById("imgContainer0").innerHTML='<img src="'+objUrl+'" class="contImg" id="img0">';
-	}
-};*/
-
 document.getElementById("file0").addEventListener('change',function ()
 {
 	let objUrl = getObjectURL(document.getElementById("file0").files[0]);
 	if (objUrl!="")
 	{
 		document.getElementById("imgContainer0").innerHTML='<img src="'+objUrl+'" class="contImg" id="img0">';
+		/*document.getElementById('img0').onload=function ()
+		{
+			stretchImage();
+		}*/
+		document.getElementById('img0').addEventListener('load',function (){stretchImage()});
 	}
 });
 

@@ -19,20 +19,6 @@ var changePosition=function ()
 	}
 }();
 
-/*
-window.onload=function ()
-{
-	cutImage();
-	changePosition();
-	console.log(1);
-};
-
-window.onresize=function ()
-{
-	cutImage();
-	changePosition();
-};*/
-
 window.addEventListener("load",changePosition);
 
 window.addEventListener("resize",changePosition);

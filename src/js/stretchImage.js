@@ -35,16 +35,6 @@ var stretchImage=(function ()
 	}
 })();
 
-/*window.onload = function ()
-{
-	cutImage();
-};
-
-window.onresize=function ()
-{
-	cutImage();
-};*/
-
 window.addEventListener("load",stretchImage);
 
 window.addEventListener("resize",stretchImage);
