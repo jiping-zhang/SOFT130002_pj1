@@ -6,14 +6,13 @@
     <link href="../../css/main.css" rel="stylesheet" type="text/css">
     <link href="../../css/pages/browser.css" rel="stylesheet" type="text/css">
     <link href="../../css/cutImage.css" rel="stylesheet" type="text/css">
-    <link href="../../css/returnTopBt.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../../js/cityCorrelateCountry.js"></script>
     <script type="text/javascript" src="../../js/cutImage.js"></script>
     <title>浏览</title>
 </head>
 <body>
 <div id="container">
-<div id="navBox">
+<header id="navBox">
     <div class="singleMenu" id="navRight">
         <span>个人中心</span>
         <div class="singleCont">
@@ -29,8 +28,8 @@
     <a href="../welcome.html"><span class="singleItem">首页</span></a>
     <a href="browserPage.html"><span class="singleItem" id="selected">浏览页</span></a>
     <a href="searchPage.html"><span class="singleItem">搜索页</span></a>
-</div>
-<div id="leftNavBox">
+</header>
+<aside id="leftNavBox">
     <div class="singleMenu">
         <a><h2>search</h2></a>
         <div class="singleCont">
@@ -85,8 +84,8 @@
             <a><span class="singleItem" onclick="document.getElementById('country').value='America';setCity(document.getElementById('country'),document.getElementById('city'));document.getElementById('city').value='San Francisco';document.getElementById('contentForm').submit();"> San Francisco </span></a>
         </div>
     </div>
-</div>
-<div id="content">
+</aside>
+<section id="content">
     <div class="contRow title">
         筛选
     </div>
@@ -149,7 +148,7 @@
             <li><a href="#"><span class="singleItem">末页</span></a></li>
         </ul>
     </div>
-</div>
+</section>
 <a href="#">
     <div id="returnTop">
         <span>↑</span>
@@ -158,9 +157,9 @@
     <div id="refresh" onclick="alert('功能缺陷')" style="cursor: pointer">
         <span>R</span>
     </div>
-    <div id="foot">
+    <footer id="foot">
         <p>Copy right 19302010022@fudan.edu.cn <img src="../../../sources/img/2dCode.jpg"></p>
-    </div>
+    </footer>
 </div>
 </body>
 </html>

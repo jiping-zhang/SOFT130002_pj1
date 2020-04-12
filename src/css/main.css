@@ -121,7 +121,7 @@ body {
 }
 /*/content*/
 /*foot(bottom)*/
-div#foot {
+#foot {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -137,7 +137,7 @@ div#foot {
     clear: both;
 }
 
-div#foot img{
+#foot img{
     width: 100px;
     height: 100px;
     margin: 10px;
